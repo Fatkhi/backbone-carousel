@@ -1,0 +1,37 @@
+#my-carousel { 
+	border: 1px solid #eaeaea; 
+	padding: 10px; 
+	font-size: 0px; 
+	display: flex; 
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+.carousel-item { 
+	position: relative; 
+	padding: 25px; 
+	display: 
+	inline-block;
+}
+
+.carousel-item .carousel-prev { 
+	display: inline-block; 
+	padding: 25px; 
+}
+.carousel-item .carousel-next { 
+	display: inline-block; 
+}
+
+.carousel-img { 
+	width: 150px; 
+	height: 150px; 
+	border: none 
+}
+
+.carousel-placeholder { 
+	width: 800px;
+}
+
+[disabled] { 
+	cursor: not-allowed; 
+}
