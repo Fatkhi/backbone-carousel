@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const PORT = process.argv[2] || 3000;
+
 const jsonData = [
 	{
 		"title": "First Block",
@@ -51,6 +53,6 @@ app.get('/blocks', (req, res) => {
   res.send(JSON.stringify(jsonData));
 });
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+app.listen(PORT, () => {
+	console.log(`App started on port ${PORT}`);
 });
