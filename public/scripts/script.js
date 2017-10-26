@@ -35,13 +35,8 @@
 
   const Carousel = Backbone.View.extend({
     events: {
-      'click .carousel-prev': 'prev',
-      'click .carousel-next': 'next',
-      'keydown': 'keyAction'
-    },
-    keyAction() {
-      console.log('here');
-      console.log(arguments);
+      'click .js-carousel-prev': 'prev',
+      'click .js-carousel-next': 'next'
     },
     initialize(options) {
       this.nextDisabled = true;
@@ -81,7 +76,7 @@
           const model = this.collection.at(i);
           el.append(this.carouselItemTemplate(model.toJSON()));
         }
-        
+
         placeholder.append(el);
 
         this.disableButtonsIfNeeded();
@@ -91,6 +86,7 @@
 
       return this;
     },
+    
     prev() {
       if(this.prevDisabled) return;
 
@@ -104,6 +100,7 @@
       }
       this.render();
     },
+
     next() {
       if(this.nextDisabled) return;
 
@@ -136,7 +133,7 @@
   });
 
   new Carousel({
-    el: '#my-carousel',
+    el: '.js-carousel',
     collection: new Blocks()
   }).render();
 

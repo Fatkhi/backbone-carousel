@@ -1,4 +1,4 @@
-#my-carousel { 
+.carousel { 
 	border: 1px solid #eaeaea; 
 	padding: 10px; 
 	font-size: 0px; 
@@ -10,16 +10,7 @@
 .carousel-item { 
 	position: relative; 
 	padding: 25px; 
-	display: 
-	inline-block;
-}
-
-.carousel-item .carousel-prev { 
-	display: inline-block; 
-	padding: 25px; 
-}
-.carousel-item .carousel-next { 
-	display: inline-block; 
+	display: inline-block;
 }
 
 .carousel-img { 
